@@ -18,11 +18,11 @@ Login with your Active Directory (computer login and password)
 
 ## Technology
 
-ReactJS
-Redux for managing state
-JWT + Redux for authentication and persisting login through pages using sessionStorage
-Fetch to post to backend
-Express for server
-Webpack to bundle relevent modules
-React Route to handle routing and private/public pages.
-Node for backend
+ReactJS <br />
+Redux for managing state <br />
+JWT + Redux for authentication and persisting login through pages using sessionStorage <br />
+Fetch to post to backend <br />
+Express for server <br />
+Webpack to bundle relevent modules <br />
+React Route to handle routing and private/public pages <br />
+Node for backend <br />
