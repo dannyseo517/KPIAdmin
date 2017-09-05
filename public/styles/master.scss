@@ -1,0 +1,208 @@
+$loginFontColor: #666666;
+$mainBlue: #024184;
+$mainWhite: white;
+$errorClr: red;
+$masterFont: 'Lato', sans-serif;
+body {
+	background-size: cover;
+	font-family: $masterFont;
+}
+
+/*
+	Style for CommentPage.js
+*/
+
+.commentDiv .textBox label{
+	font-size:14pt;
+}
+
+.commentDiv .textBox textarea{
+	width:100%;
+	resize:none;
+	padding: 12px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: 3px solid #ccc;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	outline: none;
+	font-size:12pt;
+	height:150px;
+}
+
+.commentDiv .textBox textarea:focus{
+	border: 3px solid $mainBlue;
+}
+
+.dashboardimg{
+	width:100%;
+}
+
+.submitBtn{
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	width:100%;
+	height:40px;
+	background-color:white;
+	border: 2px solid $mainBlue;
+	font-size: 14px;
+
+}
+
+.submitBtn:hover{
+	background-color: $mainBlue;
+}
+
+.sideComment > div{
+	position: sticky;
+	position: -webkit-sticky;
+	top: 20px;
+}
+
+
+/*
+Login Page
+*/
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+	
+}
+main h1{
+	text-align: center;
+	padding:10px;
+	border-bottom: 1px solid grey;
+	color: $loginFontColor;
+}
+main > div {
+  background: #FFFFFF;
+  color: black;
+  width: 20%;
+  padding: 20px;
+  overflow: auto;
+	box-shadow: 10px 10px 50px 2px #000000 ;
+	color: #888888;
+}
+
+.logindiv input{
+ 	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	resize:none;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	outline: none;
+}
+
+.logindiv button{
+	border-radius: 4px;
+	background-color: $mainBlue; /* Green */
+	width: 100%;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	margin-top: 40px;
+}
+
+.logindiv input:focus{
+	border: 1px solid $mainBlue;
+}
+
+@media only screen and (max-width: 450px){
+	main > div{
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 720px) and (min-width: 450px){
+	main > div{
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 1200px) and (min-width:720px){
+	main > div{
+		width: 55%;
+	}
+}
+
+.logindescription{
+	font-size: 12px;
+}
+
+.errorMsg{
+	color: $errorClr;
+	font-size: 12px;
+}
+
+/*
+	NavBar
+*/
+
+.topnav {
+	background-color: #f7f6f6;
+	overflow: hidden;
+	margin-left:-10px;
+	margin-right:-10px;
+	margin-top:-10px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+	float: left;
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+	box-shadow: inset 0 -5px 0 0 $mainBlue;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.navLogo{
+	color: $mainBlue;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
